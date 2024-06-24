@@ -13,12 +13,10 @@ class NewsViewModel : ViewModel() {
         val listOfArticles: List<Article> = emptyList()
     )
 
-    private val apiKey = "Enter you api key"
+    private val apiKey = "API KEY from NEWS API"
 
     private val _newsState = mutableStateOf(NewsState())
     val newsState: State<NewsState> = _newsState
-
-
 
     init {
         fetchNews("general")

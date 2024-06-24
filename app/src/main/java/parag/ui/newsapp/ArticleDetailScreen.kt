@@ -196,5 +196,13 @@ fun ArticleDetailScreen(
                 modifier = Modifier.verticalScroll(rememberScrollState())
             )
         }
+        Spacer(modifier = Modifier.padding(8.dp))
+        Text(
+            text = "For full context go to official page of ${newsArticle.source?.name.toString()}",
+            fontFamily = dmsansFontFamily,
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Normal,
+            modifier = Modifier.verticalScroll(rememberScrollState())
+        )
     }
 }
